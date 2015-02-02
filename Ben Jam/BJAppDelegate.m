@@ -7,12 +7,37 @@
 //
 
 #import "BJAppDelegate.h"
+#import "BJViewController.h"
 
 @implementation BJAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    
+#ifdef REMOVE
+    UINavigationController *navController = (UINavigationController *)self.window.rootViewController;
+    
+    // setup our layout and initial collection view
+    UICollectionViewFlowLayout *grid = [[UICollectionViewFlowLayout alloc] init];
+    grid.itemSize = CGSizeMake(75.0, 75.0);
+    grid.sectionInset = UIEdgeInsetsMake(10.0, 10.0, 10.0, 10.0);
+
+    BJViewController *collectionViewController = [[BJViewController alloc] initWithCollectionViewLayout:grid];
+    collectionViewController.title = @"Grid Layout";
+    navController.navigationBar.translucent = NO;
+    navController.delegate = self;
+    
+    // add the single collection view to our navigation controller
+    [navController setViewControllers:@[collectionViewController]];
+    
+    // we want a light gray for the navigation bar, otherwise it defaults to white
+    navController.navigationBar.barTintColor = [UIColor lightGrayColor];
+    
+    // create our "transitioning" object to manage the pinch gesture to transitition between stack and grid layouts
+    //_transitionManager =
+    //[[APLTransitionManager alloc] initWithCollectionView:collectionViewController.collectionView];
+    //self.transitionManager.delegate = self;
+#endif
     return YES;
 }
 							

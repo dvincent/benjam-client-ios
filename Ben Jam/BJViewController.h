@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BJItem.h"
 
-@interface BJViewController : UIViewController
-
+@interface BJViewController : UICollectionViewController<UICollectionViewDataSource>
+@property (nonatomic,strong)BJItem *item;
 @end

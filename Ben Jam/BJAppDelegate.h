@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BJAppDelegate : UIResponder <UIApplicationDelegate>
+@interface BJAppDelegate : UIResponder <UIApplicationDelegate,UINavigationControllerDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

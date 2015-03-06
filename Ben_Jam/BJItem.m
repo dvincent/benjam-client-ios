@@ -27,9 +27,28 @@
              @"id": @"id",
              @"name": @"name",
              @"position": @"position",
-             @"imagePath": @"imagePath",
-             @"auditPath": @"audioPath",
-             @"parent_id": @"parentId"
+             @"imagePath": @"image",
+             @"audioPath": @"audio",
+             @"parentId": @"parent_id"
              };
+}
++(NSString *)managedObjectEntityName
+{
+    // ------------------------------------------------
+    // If you have a Core Data entity called "Book"
+    // then you return @"Book";
+    //
+    // Don't return the Mantle model class name here.
+    // ------------------------------------------------
+    return @"BJItem";
+}
+
++(NSDictionary *)managedObjectKeysByPropertyKey
+{
+    // ------------------------------------------------
+    // not really sure what this does, I just put
+    // it in as the example does it too
+    // ------------------------------------------------
+    return @{};
 }
 @end

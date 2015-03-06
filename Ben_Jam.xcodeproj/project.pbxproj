@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10FB7EA318B4A9E5E92FC3D7 /* libPods-Ben_JamTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1013D5B7110BABCF0280118 /* libPods-Ben_JamTests.a */; };
+		2046A6181A7F138A00C08622 /* BJItemClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2046A6171A7F138A00C08622 /* BJItemClientTests.m */; };
+		2046A61B1A7F13B500C08622 /* BJItemClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2046A61A1A7F13B500C08622 /* BJItemClient.m */; };
 		2056F1A01A3A78D700E5142B /* biscuit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2056F1811A3A78D700E5142B /* biscuit.jpg */; };
 		2056F1A11A3A78D700E5142B /* bread.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2056F1821A3A78D700E5142B /* bread.jpg */; };
 		2056F1A21A3A78D700E5142B /* breadsticks.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2056F1831A3A78D700E5142B /* breadsticks.jpg */; };
@@ -42,6 +45,10 @@
 		2056F1C41A3A86E000E5142B /* BJItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2056F1C31A3A86E000E5142B /* BJItem.m */; };
 		2084DF7B1A65E34E000BCB9A /* BJFixedGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2084DF7A1A65E34E000BCB9A /* BJFixedGridLayout.m */; };
 		2084DF7C1A65E34E000BCB9A /* BJFixedGridLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2084DF7A1A65E34E000BCB9A /* BJFixedGridLayout.m */; };
+		20970A371A7F1512009E8914 /* BJItemClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2046A61A1A7F13B500C08622 /* BJItemClient.m */; };
+		20970A381A7F1833009E8914 /* BJItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2056F1C31A3A86E000E5142B /* BJItem.m */; };
+		20AA74FD1AA404A0003E1EE4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 20AA74FC1AA404A0003E1EE4 /* Podfile */; };
+		20AA74FF1AA404AB003E1EE4 /* Podfile.lock in Resources */ = {isa = PBXBuildFile; fileRef = 20AA74FE1AA404AB003E1EE4 /* Podfile.lock */; };
 		20BD7D721A390DC900790055 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BD7D711A390DC900790055 /* Foundation.framework */; };
 		20BD7D741A390DC900790055 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BD7D731A390DC900790055 /* CoreGraphics.framework */; };
 		20BD7D761A390DC900790055 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20BD7D751A390DC900790055 /* UIKit.framework */; };
@@ -57,8 +64,9 @@
 		20BD7D9B1A390DC900790055 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20BD7D991A390DC900790055 /* InfoPlist.strings */; };
 		20BD7D9D1A390DC900790055 /* Ben_JamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BD7D9C1A390DC900790055 /* Ben_JamTests.m */; };
 		20BD7DA81A39161400790055 /* BJCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BD7DA71A39161400790055 /* BJCell.m */; };
-		6DA891A250C2BE69B6D3638B /* libPods-Ben JamTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 546EB18AF0884F19F5A77695 /* libPods-Ben JamTests.a */; };
-		B6C17880867642FF06F23A74 /* libPods-Ben Jam.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C86956C836016D81C683BC26 /* libPods-Ben Jam.a */; };
+		20FABD351AA5B7EE0002E4BB /* BJModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20FABD331AA5B7EE0002E4BB /* BJModel.xcdatamodeld */; };
+		20FABD371AA5CA3E0002E4BB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FABD361AA5CA3E0002E4BB /* AVFoundation.framework */; };
+		C5807A295954134EFFB9CAF4 /* libPods-Ben_Jam.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E318FDCEE24FE80A790DB6 /* libPods-Ben_Jam.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +80,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2046A6171A7F138A00C08622 /* BJItemClientTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJItemClientTests.m; sourceTree = "<group>"; };
+		2046A6191A7F13B500C08622 /* BJItemClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJItemClient.h; sourceTree = "<group>"; };
+		2046A61A1A7F13B500C08622 /* BJItemClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJItemClient.m; sourceTree = "<group>"; };
 		2056F1811A3A78D700E5142B /* biscuit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = biscuit.jpg; sourceTree = "<group>"; };
 		2056F1821A3A78D700E5142B /* bread.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bread.jpg; sourceTree = "<group>"; };
 		2056F1831A3A78D700E5142B /* breadsticks.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = breadsticks.jpg; sourceTree = "<group>"; };
@@ -109,33 +120,37 @@
 		2056F1C31A3A86E000E5142B /* BJItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJItem.m; sourceTree = "<group>"; };
 		2084DF791A65E34E000BCB9A /* BJFixedGridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJFixedGridLayout.h; sourceTree = "<group>"; };
 		2084DF7A1A65E34E000BCB9A /* BJFixedGridLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJFixedGridLayout.m; sourceTree = "<group>"; };
-		20BD7D6E1A390DC900790055 /* Ben Jam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ben Jam.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20AA74FC1AA404A0003E1EE4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		20AA74FE1AA404AB003E1EE4 /* Podfile.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		20BD7D6E1A390DC900790055 /* Ben_Jam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ben_Jam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BD7D711A390DC900790055 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		20BD7D731A390DC900790055 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		20BD7D751A390DC900790055 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		20BD7D791A390DC900790055 /* Ben Jam-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ben Jam-Info.plist"; sourceTree = "<group>"; };
+		20BD7D791A390DC900790055 /* Ben_Jam-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ben_Jam-Info.plist"; sourceTree = "<group>"; };
 		20BD7D7B1A390DC900790055 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		20BD7D7D1A390DC900790055 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		20BD7D7F1A390DC900790055 /* Ben Jam-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ben Jam-Prefix.pch"; sourceTree = "<group>"; };
+		20BD7D7F1A390DC900790055 /* Ben_Jam-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ben_Jam-Prefix.pch"; sourceTree = "<group>"; };
 		20BD7D801A390DC900790055 /* BJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJAppDelegate.h; sourceTree = "<group>"; };
 		20BD7D811A390DC900790055 /* BJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJAppDelegate.m; sourceTree = "<group>"; };
 		20BD7D841A390DC900790055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20BD7D861A390DC900790055 /* BJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJViewController.h; sourceTree = "<group>"; };
 		20BD7D871A390DC900790055 /* BJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJViewController.m; sourceTree = "<group>"; };
 		20BD7D891A390DC900790055 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		20BD7D8F1A390DC900790055 /* Ben JamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ben JamTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20BD7D8F1A390DC900790055 /* Ben_JamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ben_JamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BD7D901A390DC900790055 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		20BD7D981A390DC900790055 /* Ben JamTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ben JamTests-Info.plist"; sourceTree = "<group>"; };
+		20BD7D981A390DC900790055 /* Ben_JamTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ben_JamTests-Info.plist"; sourceTree = "<group>"; };
 		20BD7D9A1A390DC900790055 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		20BD7D9C1A390DC900790055 /* Ben_JamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ben_JamTests.m; sourceTree = "<group>"; };
 		20BD7DA61A39161400790055 /* BJCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJCell.h; sourceTree = "<group>"; };
 		20BD7DA71A39161400790055 /* BJCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJCell.m; sourceTree = "<group>"; };
-		546EB18AF0884F19F5A77695 /* libPods-Ben JamTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ben JamTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		682CD6EE0DE556CB49265AA3 /* Pods-Ben JamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ben JamTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ben JamTests/Pods-Ben JamTests.release.xcconfig"; sourceTree = "<group>"; };
-		B2532B666683A3B2AFEA4C8E /* Pods-Ben Jam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ben Jam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ben Jam/Pods-Ben Jam.debug.xcconfig"; sourceTree = "<group>"; };
-		C86956C836016D81C683BC26 /* libPods-Ben Jam.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ben Jam.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC0E643408592A411E05718B /* Pods-Ben JamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ben JamTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ben JamTests/Pods-Ben JamTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DB974823AA1A870D185C3EFF /* Pods-Ben Jam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ben Jam.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ben Jam/Pods-Ben Jam.release.xcconfig"; sourceTree = "<group>"; };
+		20FABD341AA5B7EE0002E4BB /* BJModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BJModel.xcdatamodel; sourceTree = "<group>"; };
+		20FABD361AA5CA3E0002E4BB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		52E318FDCEE24FE80A790DB6 /* libPods-Ben_Jam.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ben_Jam.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1D7620BF6243BB45DC804D /* Pods-Ben_Jam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ben_Jam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ben_Jam/Pods-Ben_Jam.debug.xcconfig"; sourceTree = "<group>"; };
+		8A76511888D79DAB45DF89DF /* Pods-Ben_JamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ben_JamTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ben_JamTests/Pods-Ben_JamTests.release.xcconfig"; sourceTree = "<group>"; };
+		D32096E16CBCF68D550545EC /* Pods-Ben_JamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ben_JamTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ben_JamTests/Pods-Ben_JamTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E1013D5B7110BABCF0280118 /* libPods-Ben_JamTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ben_JamTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F224339EA4F685438ABA31E2 /* Pods-Ben_Jam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ben_Jam.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ben_Jam/Pods-Ben_Jam.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,10 +158,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20FABD371AA5CA3E0002E4BB /* AVFoundation.framework in Frameworks */,
 				20BD7D741A390DC900790055 /* CoreGraphics.framework in Frameworks */,
 				20BD7D761A390DC900790055 /* UIKit.framework in Frameworks */,
 				20BD7D721A390DC900790055 /* Foundation.framework in Frameworks */,
-				B6C17880867642FF06F23A74 /* libPods-Ben Jam.a in Frameworks */,
+				C5807A295954134EFFB9CAF4 /* libPods-Ben_Jam.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +173,7 @@
 				20BD7D911A390DC900790055 /* XCTest.framework in Frameworks */,
 				20BD7D931A390DC900790055 /* UIKit.framework in Frameworks */,
 				20BD7D921A390DC900790055 /* Foundation.framework in Frameworks */,
-				6DA891A250C2BE69B6D3638B /* libPods-Ben JamTests.a in Frameworks */,
+				10FB7EA318B4A9E5E92FC3D7 /* libPods-Ben_JamTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +222,9 @@
 		20BD7D651A390DC900790055 = {
 			isa = PBXGroup;
 			children = (
-				20BD7D771A390DC900790055 /* Ben Jam */,
+				20AA74FE1AA404AB003E1EE4 /* Podfile.lock */,
+				20AA74FC1AA404A0003E1EE4 /* Podfile */,
+				20BD7D771A390DC900790055 /* Ben_Jam */,
 				20BD7D961A390DC900790055 /* Ben JamTests */,
 				20BD7D701A390DC900790055 /* Frameworks */,
 				20BD7D6F1A390DC900790055 /* Products */,
@@ -217,8 +235,8 @@
 		20BD7D6F1A390DC900790055 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				20BD7D6E1A390DC900790055 /* Ben Jam.app */,
-				20BD7D8F1A390DC900790055 /* Ben JamTests.xctest */,
+				20BD7D6E1A390DC900790055 /* Ben_Jam.app */,
+				20BD7D8F1A390DC900790055 /* Ben_JamTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,17 +244,18 @@
 		20BD7D701A390DC900790055 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				20FABD361AA5CA3E0002E4BB /* AVFoundation.framework */,
 				20BD7D711A390DC900790055 /* Foundation.framework */,
 				20BD7D731A390DC900790055 /* CoreGraphics.framework */,
 				20BD7D751A390DC900790055 /* UIKit.framework */,
 				20BD7D901A390DC900790055 /* XCTest.framework */,
-				C86956C836016D81C683BC26 /* libPods-Ben Jam.a */,
-				546EB18AF0884F19F5A77695 /* libPods-Ben JamTests.a */,
+				52E318FDCEE24FE80A790DB6 /* libPods-Ben_Jam.a */,
+				E1013D5B7110BABCF0280118 /* libPods-Ben_JamTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		20BD7D771A390DC900790055 /* Ben Jam */ = {
+		20BD7D771A390DC900790055 /* Ben_Jam */ = {
 			isa = PBXGroup;
 			children = (
 				2056F1801A3A781900E5142B /* Images */,
@@ -254,17 +273,20 @@
 				20BD7D891A390DC900790055 /* Images.xcassets */,
 				2084DF791A65E34E000BCB9A /* BJFixedGridLayout.h */,
 				2084DF7A1A65E34E000BCB9A /* BJFixedGridLayout.m */,
+				2046A6191A7F13B500C08622 /* BJItemClient.h */,
+				2046A61A1A7F13B500C08622 /* BJItemClient.m */,
+				20FABD331AA5B7EE0002E4BB /* BJModel.xcdatamodeld */,
 			);
-			path = "Ben Jam";
+			path = Ben_Jam;
 			sourceTree = "<group>";
 		};
 		20BD7D781A390DC900790055 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				20BD7D791A390DC900790055 /* Ben Jam-Info.plist */,
+				20BD7D791A390DC900790055 /* Ben_Jam-Info.plist */,
 				20BD7D7A1A390DC900790055 /* InfoPlist.strings */,
 				20BD7D7D1A390DC900790055 /* main.m */,
-				20BD7D7F1A390DC900790055 /* Ben Jam-Prefix.pch */,
+				20BD7D7F1A390DC900790055 /* Ben_Jam-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			path = ..;
@@ -275,14 +297,16 @@
 			children = (
 				20BD7D9C1A390DC900790055 /* Ben_JamTests.m */,
 				20BD7D971A390DC900790055 /* Supporting Files */,
+				2046A6171A7F138A00C08622 /* BJItemClientTests.m */,
 			);
-			path = "Ben JamTests";
+			name = "Ben JamTests";
+			path = Ben_JamTests;
 			sourceTree = "<group>";
 		};
 		20BD7D971A390DC900790055 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				20BD7D981A390DC900790055 /* Ben JamTests-Info.plist */,
+				20BD7D981A390DC900790055 /* Ben_JamTests-Info.plist */,
 				20BD7D991A390DC900790055 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -291,10 +315,10 @@
 		3F8C82AA9D8D6E3718246C8E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B2532B666683A3B2AFEA4C8E /* Pods-Ben Jam.debug.xcconfig */,
-				DB974823AA1A870D185C3EFF /* Pods-Ben Jam.release.xcconfig */,
-				CC0E643408592A411E05718B /* Pods-Ben JamTests.debug.xcconfig */,
-				682CD6EE0DE556CB49265AA3 /* Pods-Ben JamTests.release.xcconfig */,
+				6F1D7620BF6243BB45DC804D /* Pods-Ben_Jam.debug.xcconfig */,
+				F224339EA4F685438ABA31E2 /* Pods-Ben_Jam.release.xcconfig */,
+				D32096E16CBCF68D550545EC /* Pods-Ben_JamTests.debug.xcconfig */,
+				8A76511888D79DAB45DF89DF /* Pods-Ben_JamTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -302,9 +326,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		20BD7D6D1A390DC900790055 /* Ben Jam */ = {
+		20BD7D6D1A390DC900790055 /* Ben_Jam */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 20BD7DA01A390DC900790055 /* Build configuration list for PBXNativeTarget "Ben Jam" */;
+			buildConfigurationList = 20BD7DA01A390DC900790055 /* Build configuration list for PBXNativeTarget "Ben_Jam" */;
 			buildPhases = (
 				E8CB7A03F0E8950240C663AD /* Check Pods Manifest.lock */,
 				20BD7D6A1A390DC900790055 /* Sources */,
@@ -316,14 +340,14 @@
 			);
 			dependencies = (
 			);
-			name = "Ben Jam";
+			name = Ben_Jam;
 			productName = "Ben Jam";
-			productReference = 20BD7D6E1A390DC900790055 /* Ben Jam.app */;
+			productReference = 20BD7D6E1A390DC900790055 /* Ben_Jam.app */;
 			productType = "com.apple.product-type.application";
 		};
-		20BD7D8E1A390DC900790055 /* Ben JamTests */ = {
+		20BD7D8E1A390DC900790055 /* Ben_JamTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 20BD7DA31A390DC900790055 /* Build configuration list for PBXNativeTarget "Ben JamTests" */;
+			buildConfigurationList = 20BD7DA31A390DC900790055 /* Build configuration list for PBXNativeTarget "Ben_JamTests" */;
 			buildPhases = (
 				9427D2342B051CED41DBCE85 /* Check Pods Manifest.lock */,
 				20BD7D8B1A390DC900790055 /* Sources */,
@@ -336,9 +360,9 @@
 			dependencies = (
 				20BD7D951A390DC900790055 /* PBXTargetDependency */,
 			);
-			name = "Ben JamTests";
+			name = Ben_JamTests;
 			productName = "Ben JamTests";
-			productReference = 20BD7D8F1A390DC900790055 /* Ben JamTests.xctest */;
+			productReference = 20BD7D8F1A390DC900790055 /* Ben_JamTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -354,12 +378,9 @@
 					20BD7D6D1A390DC900790055 = {
 						DevelopmentTeam = VY33H569Y3;
 					};
-					20BD7D8E1A390DC900790055 = {
-						TestTargetID = 20BD7D6D1A390DC900790055;
-					};
 				};
 			};
-			buildConfigurationList = 20BD7D691A390DC900790055 /* Build configuration list for PBXProject "Ben Jam" */;
+			buildConfigurationList = 20BD7D691A390DC900790055 /* Build configuration list for PBXProject "Ben_Jam" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -372,8 +393,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				20BD7D6D1A390DC900790055 /* Ben Jam */,
-				20BD7D8E1A390DC900790055 /* Ben JamTests */,
+				20BD7D6D1A390DC900790055 /* Ben_Jam */,
+				20BD7D8E1A390DC900790055 /* Ben_JamTests */,
 			);
 		};
 /* End PBXProject section */
@@ -388,6 +409,7 @@
 				2056F1AF1A3A78D700E5142B /* lollies.jpg in Resources */,
 				2056F1A61A3A78D700E5142B /* c_park.jpg in Resources */,
 				2056F1B81A3A78D700E5142B /* tv_wiggles.jpg in Resources */,
+				20AA74FD1AA404A0003E1EE4 /* Podfile in Resources */,
 				2056F1A31A3A78D700E5142B /* c_books.jpg in Resources */,
 				20BD7D8A1A390DC900790055 /* Images.xcassets in Resources */,
 				2056F1B31A3A78D700E5142B /* tv_ben10.jpg in Resources */,
@@ -400,6 +422,7 @@
 				2056F1BC1A3A78D700E5142B /* tv_wiggles4.jpg in Resources */,
 				2056F1AD1A3A78D700E5142B /* i_home.png in Resources */,
 				2056F1A81A3A78D700E5142B /* c_tv.jpg in Resources */,
+				20AA74FF1AA404AB003E1EE4 /* Podfile.lock in Resources */,
 				2056F1AA1A3A78D700E5142B /* i_add_grey.png in Resources */,
 				20BD7D7C1A390DC900790055 /* InfoPlist.strings in Resources */,
 				2056F1BD1A3A78D700E5142B /* user_ben.png in Resources */,
@@ -443,7 +466,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ben JamTests/Pods-Ben JamTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ben_JamTests/Pods-Ben_JamTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2991401AB411C2839893651B /* Copy Pods Resources */ = {
@@ -458,7 +481,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ben Jam/Pods-Ben Jam-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ben_Jam/Pods-Ben_Jam-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9427D2342B051CED41DBCE85 /* Check Pods Manifest.lock */ = {
@@ -500,7 +523,9 @@
 			files = (
 				2056F1C41A3A86E000E5142B /* BJItem.m in Sources */,
 				2056F1C11A3A7F3200E5142B /* BJDetailViewController.m in Sources */,
+				20FABD351AA5B7EE0002E4BB /* BJModel.xcdatamodeld in Sources */,
 				20BD7D881A390DC900790055 /* BJViewController.m in Sources */,
+				2046A61B1A7F13B500C08622 /* BJItemClient.m in Sources */,
 				20BD7D821A390DC900790055 /* BJAppDelegate.m in Sources */,
 				2084DF7B1A65E34E000BCB9A /* BJFixedGridLayout.m in Sources */,
 				20BD7D7E1A390DC900790055 /* main.m in Sources */,
@@ -512,8 +537,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2046A6181A7F138A00C08622 /* BJItemClientTests.m in Sources */,
 				2084DF7C1A65E34E000BCB9A /* BJFixedGridLayout.m in Sources */,
 				20BD7D9D1A390DC900790055 /* Ben_JamTests.m in Sources */,
+				20970A371A7F1512009E8914 /* BJItemClient.m in Sources */,
+				20970A381A7F1833009E8914 /* BJItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,7 +550,7 @@
 /* Begin PBXTargetDependency section */
 		20BD7D951A390DC900790055 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 20BD7D6D1A390DC900790055 /* Ben Jam */;
+			target = 20BD7D6D1A390DC900790055 /* Ben_Jam */;
 			targetProxy = 20BD7D941A390DC900790055 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -571,6 +599,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Pegwing Pty Ltd (VY33H569Y3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -589,6 +618,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "79ebf19b-4ae0-4004-88c7-aa119d9ccaf3";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -610,6 +640,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Pegwing Pty Ltd (VY33H569Y3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -621,6 +652,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PROVISIONING_PROFILE = "79ebf19b-4ae0-4004-88c7-aa119d9ccaf3";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -629,72 +661,68 @@
 		};
 		20BD7DA11A390DC900790055 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2532B666683A3B2AFEA4C8E /* Pods-Ben Jam.debug.xcconfig */;
+			baseConfigurationReference = 6F1D7620BF6243BB45DC804D /* Pods-Ben_Jam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Pegwing Pty Ltd (VY33H569Y3)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Ben Jam/Ben Jam-Prefix.pch";
-				INFOPLIST_FILE = "Ben Jam/Ben Jam-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Ben_Jam/Ben_Jam-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Ben_Jam/Ben_Jam-Info.plist";
+				PRODUCT_NAME = Ben_Jam;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		20BD7DA21A390DC900790055 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB974823AA1A870D185C3EFF /* Pods-Ben Jam.release.xcconfig */;
+			baseConfigurationReference = F224339EA4F685438ABA31E2 /* Pods-Ben_Jam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Pegwing Pty Ltd (VY33H569Y3)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Ben Jam/Ben Jam-Prefix.pch";
-				INFOPLIST_FILE = "Ben Jam/Ben Jam-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Ben_Jam/Ben_Jam-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Ben_Jam/Ben_Jam-Info.plist";
+				PRODUCT_NAME = Ben_Jam;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
 		20BD7DA41A390DC900790055 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC0E643408592A411E05718B /* Pods-Ben JamTests.debug.xcconfig */;
+			baseConfigurationReference = D32096E16CBCF68D550545EC /* Pods-Ben_JamTests.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ben Jam.app/Ben Jam";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Ben Jam/Ben Jam-Prefix.pch";
+				GCC_PREFIX_HEADER = "Ben_Jam/Ben_Jam-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Ben JamTests/Ben JamTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				INFOPLIST_FILE = "Ben_JamTests/Ben_JamTests-Info.plist";
+				PRODUCT_NAME = Ben_JamTests;
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
 		20BD7DA51A390DC900790055 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 682CD6EE0DE556CB49265AA3 /* Pods-Ben JamTests.release.xcconfig */;
+			baseConfigurationReference = 8A76511888D79DAB45DF89DF /* Pods-Ben_JamTests.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Ben Jam.app/Ben Jam";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Ben Jam/Ben Jam-Prefix.pch";
-				INFOPLIST_FILE = "Ben JamTests/Ben JamTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				GCC_PREFIX_HEADER = "Ben_Jam/Ben_Jam-Prefix.pch";
+				INFOPLIST_FILE = "Ben_JamTests/Ben_JamTests-Info.plist";
+				PRODUCT_NAME = Ben_JamTests;
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -702,7 +730,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		20BD7D691A390DC900790055 /* Build configuration list for PBXProject "Ben Jam" */ = {
+		20BD7D691A390DC900790055 /* Build configuration list for PBXProject "Ben_Jam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				20BD7D9E1A390DC900790055 /* Debug */,
@@ -711,7 +739,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		20BD7DA01A390DC900790055 /* Build configuration list for PBXNativeTarget "Ben Jam" */ = {
+		20BD7DA01A390DC900790055 /* Build configuration list for PBXNativeTarget "Ben_Jam" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				20BD7DA11A390DC900790055 /* Debug */,
@@ -720,7 +748,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		20BD7DA31A390DC900790055 /* Build configuration list for PBXNativeTarget "Ben JamTests" */ = {
+		20BD7DA31A390DC900790055 /* Build configuration list for PBXNativeTarget "Ben_JamTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				20BD7DA41A390DC900790055 /* Debug */,
@@ -730,6 +758,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		20FABD331AA5B7EE0002E4BB /* BJModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				20FABD341AA5B7EE0002E4BB /* BJModel.xcdatamodel */,
+			);
+			currentVersion = 20FABD341AA5B7EE0002E4BB /* BJModel.xcdatamodel */;
+			path = BJModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 20BD7D661A390DC900790055 /* Project object */;
 }

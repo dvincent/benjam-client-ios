@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 #import "BJItem.h"
+
 
 @interface BJViewController : UICollectionViewController<UICollectionViewDataSource>
 @property (nonatomic,strong)BJItem *item;
+@property (nonatomic,strong)NSArray *items;
+@property (nonatomic,strong)AVPlayer *player;
+@property (nonatomic,strong)AVAudioPlayer *audioPlayer;
 @end

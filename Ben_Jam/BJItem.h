@@ -15,7 +15,7 @@
 @property (nonatomic,strong) NSNumber* position;
 @property (nonatomic,strong) NSString* imagePath;
 @property (nonatomic,strong) NSString* audioPath;
-@property (nonatomic,strong) NSString *parent_id;
+@property (nonatomic,strong) NSString *parentId;
 
 
 @end

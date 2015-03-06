@@ -46,8 +46,8 @@
     // then the square root of the area gives the size of a suitable square.
     CGFloat itemWidth = sqrt(size.height * size.width / itemCount);
     
-    int widthCount = lrint(trunc(size.width / itemWidth));
-    int heightCount = lrint(trunc(size.height / itemWidth));
+    long widthCount = lrint(trunc(size.width / itemWidth));
+    long heightCount = lrint(trunc(size.height / itemWidth));
     
     // Add a row or a column ?
     if ( (size.width - (widthCount * itemWidth)) > (size.height - (heightCount * itemWidth))) {
@@ -88,7 +88,7 @@
         attributes.center = CGPointMake(x, y);;
         attributes.alpha = 1.0;
         attributes.zIndex = 0;
-        NSLog(@"Layout attributes %d\n%@\n", i, attributes.description);
+        NSLog(@"Layout attributes %ld\n%@\n", (long)i, attributes.description);
         NSLog(@"Size %f %f Centre %f %f\n", attributes.size.width, attributes.size.height,
               attributes.center.x, attributes.center.y);
         [self.attributesArray addObject:attributes];

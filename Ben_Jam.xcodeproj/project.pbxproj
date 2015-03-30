@@ -183,7 +183,6 @@
 		2056F1801A3A781900E5142B /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				20BD7D781A390DC900790055 /* Supporting Files */,
 				2056F1811A3A78D700E5142B /* biscuit.jpg */,
 				2056F1821A3A78D700E5142B /* bread.jpg */,
 				2056F1831A3A78D700E5142B /* breadsticks.jpg */,
@@ -258,6 +257,7 @@
 		20BD7D771A390DC900790055 /* Ben_Jam */ = {
 			isa = PBXGroup;
 			children = (
+				20BD7D781A390DC900790055 /* Supporting Files */,
 				2056F1801A3A781900E5142B /* Images */,
 				20BD7D801A390DC900790055 /* BJAppDelegate.h */,
 				20BD7D811A390DC900790055 /* BJAppDelegate.m */,
@@ -289,7 +289,6 @@
 				20BD7D7F1A390DC900790055 /* Ben_Jam-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			path = ..;
 			sourceTree = "<group>";
 		};
 		20BD7D961A390DC900790055 /* Ben JamTests */ = {

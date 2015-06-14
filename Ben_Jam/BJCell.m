@@ -77,7 +77,10 @@
 
 - (void)prepareForReuse
 {
+    [super prepareForReuse];
     [self.imageView hnk_cancelSetImage];
     self.imageView.image = nil;
+
+
 }
 @end

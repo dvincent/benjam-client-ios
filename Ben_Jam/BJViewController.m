@@ -32,7 +32,7 @@
 }
 - (PMKPromise *)loadItems {
     // Load items from server
-    NSURL *itemURL = [NSURL URLWithString:@"http://10.0.1.128:3000"];
+    NSURL *itemURL = [NSURL URLWithString:@"http://benjam.herokuapp.com"];
     BJItemClient * itemClient = [[BJItemClient alloc] initWithBaseURL:itemURL];
     
     NSString *itemPath;
@@ -47,7 +47,7 @@
     });
 }
 - (void)play {
-    NSURL *audioURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://10.0.1.128:3000/%@", self.item.audioPath]];
+    NSURL *audioURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://benjam.herokuapp.com/%@", self.item.audioPath]];
     //self.player = [AVPlayer playerWithURL:audioURL];
     //NSLog(@"Status %d",[self.player status]);
     //NSLog(@"Error %@",[self.player error]);
@@ -110,10 +110,11 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     BJCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+
     BJItem *item = (BJItem *)self.items[indexPath.row];
    
     // load the image for this cell
-    [cell.imageView hnk_setImageFromURL:[NSURL URLWithString:[@"http://10.0.1.128:3000/" stringByAppendingString:item.imagePath]]];
+    [cell.imageView hnk_setImageFromURL:[NSURL URLWithString:[@"http://benjam.herokuapp.com/" stringByAppendingString:item.imagePath]]];
 
     cell.label.text = [NSString stringWithFormat:@"{%ld,%ld} %@", (long)indexPath.row, (long)indexPath.section, item.name];
     return cell;

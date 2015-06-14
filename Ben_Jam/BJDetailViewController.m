@@ -57,10 +57,15 @@
 
 - (IBAction)correct:(id)sender
 {
-    
+    // add the single collection view to our navigation controller
+    [self.navigationController popToRootViewControllerAnimated:YES];
+
+ 
 }
-- (IBAction)incorrect:(id)sender {
-    
+- (IBAction)incorrect:(id)sender
+{
+    // add the single collection view to our navigation controller
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 @end

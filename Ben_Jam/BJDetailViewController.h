@@ -10,7 +10,8 @@
 
 @interface BJDetailViewController : UIViewController
 
-@property (nonatomic, strong) IBOutlet UIImage *image;
-@property (nonatomic, strong) IBOutlet UILabel *label;
+@property (nonatomic, strong) UIImage *image;
+@property (nonatomic, strong) NSString *labelText;
+
 
 @end

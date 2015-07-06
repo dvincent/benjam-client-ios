@@ -65,6 +65,7 @@
     NSLog(@"Error %@", error);
     
 }
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -116,7 +117,7 @@
     // load the image for this cell
     [cell.imageView hnk_setImageFromURL:[NSURL URLWithString:[@"http://benjam.herokuapp.com/" stringByAppendingString:item.imagePath]]];
 
-    cell.label.text = [NSString stringWithFormat:@"{%ld,%ld} %@", (long)indexPath.row, (long)indexPath.section, item.name];
+    cell.label.text = [NSString stringWithFormat:@" %@", item.name];
     return cell;
 }
 
@@ -140,10 +141,19 @@
                 BJDetailViewController *detailViewController = [storyboard instantiateViewControllerWithIdentifier:@"detailVC"];
                 // FIXME get image from item url
                 detailViewController.image = cell.imageView.image;
+                detailViewController.labelText = cell.label.text;
+
+                 self.item = nil;
+                self.items = nil;
+            
                 // FIXME audio
                 [self.navigationController pushViewController:detailViewController animated:YES];
             }
     }});
 }
-
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    self.item = nil;
+    self.items = nil;
+}
 @end

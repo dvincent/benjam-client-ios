@@ -34,6 +34,8 @@
 		20BD7DA81A39161400790055 /* BJCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20BD7DA71A39161400790055 /* BJCell.m */; };
 		20FABD351AA5B7EE0002E4BB /* BJModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20FABD331AA5B7EE0002E4BB /* BJModel.xcdatamodeld */; };
 		20FABD371AA5CA3E0002E4BB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FABD361AA5CA3E0002E4BB /* AVFoundation.framework */; };
+		631B7DDA1B4282D800BD8BD8 /* BJServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 631B7DD91B4282D800BD8BD8 /* BJServer.m */; };
+		631B7DDB1B4282D800BD8BD8 /* BJServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 631B7DD91B4282D800BD8BD8 /* BJServer.m */; };
 		C5807A295954134EFFB9CAF4 /* libPods-Ben_Jam.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E318FDCEE24FE80A790DB6 /* libPods-Ben_Jam.a */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +85,8 @@
 		20FABD341AA5B7EE0002E4BB /* BJModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BJModel.xcdatamodel; sourceTree = "<group>"; };
 		20FABD361AA5CA3E0002E4BB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		52E318FDCEE24FE80A790DB6 /* libPods-Ben_Jam.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ben_Jam.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		631B7DD81B4282D800BD8BD8 /* BJServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJServer.h; sourceTree = "<group>"; };
+		631B7DD91B4282D800BD8BD8 /* BJServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJServer.m; sourceTree = "<group>"; };
 		6F1D7620BF6243BB45DC804D /* Pods-Ben_Jam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ben_Jam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ben_Jam/Pods-Ben_Jam.debug.xcconfig"; sourceTree = "<group>"; };
 		8A76511888D79DAB45DF89DF /* Pods-Ben_JamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ben_JamTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ben_JamTests/Pods-Ben_JamTests.release.xcconfig"; sourceTree = "<group>"; };
 		D32096E16CBCF68D550545EC /* Pods-Ben_JamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ben_JamTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ben_JamTests/Pods-Ben_JamTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +178,8 @@
 				2046A6191A7F13B500C08622 /* BJItemClient.h */,
 				2046A61A1A7F13B500C08622 /* BJItemClient.m */,
 				20FABD331AA5B7EE0002E4BB /* BJModel.xcdatamodeld */,
+				631B7DD81B4282D800BD8BD8 /* BJServer.h */,
+				631B7DD91B4282D800BD8BD8 /* BJServer.m */,
 			);
 			path = Ben_Jam;
 			sourceTree = "<group>";
@@ -386,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				631B7DDA1B4282D800BD8BD8 /* BJServer.m in Sources */,
 				2056F1C41A3A86E000E5142B /* BJItem.m in Sources */,
 				2056F1C11A3A7F3200E5142B /* BJDetailViewController.m in Sources */,
 				20FABD351AA5B7EE0002E4BB /* BJModel.xcdatamodeld in Sources */,
@@ -406,6 +413,7 @@
 				2084DF7C1A65E34E000BCB9A /* BJFixedGridLayout.m in Sources */,
 				20BD7D9D1A390DC900790055 /* Ben_JamTests.m in Sources */,
 				20970A371A7F1512009E8914 /* BJItemClient.m in Sources */,
+				631B7DDB1B4282D800BD8BD8 /* BJServer.m in Sources */,
 				20970A381A7F1833009E8914 /* BJItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,11 +538,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Pegwing Pty Ltd (VY33H569Y3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ben_Jam/Ben_Jam-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Ben_Jam/Ben_Jam-Info.plist";
 				PRODUCT_NAME = Ben_Jam;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -545,11 +555,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Pegwing Pty Ltd (VY33H569Y3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ben_Jam/Ben_Jam-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/Ben_Jam/Ben_Jam-Info.plist";
 				PRODUCT_NAME = Ben_Jam;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

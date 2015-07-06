@@ -189,8 +189,8 @@
 			children = (
 				20BD7D791A390DC900790055 /* Ben_Jam-Info.plist */,
 				20BD7D7A1A390DC900790055 /* InfoPlist.strings */,
-				20BD7D7D1A390DC900790055 /* main.m */,
 				20BD7D7F1A390DC900790055 /* Ben_Jam-Prefix.pch */,
+				20BD7D7D1A390DC900790055 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";

@@ -66,8 +66,10 @@
     [super drawRect:rect];
 }
 
-
-
+-(void)setFrame:(CGRect)frame {
+    [super setFrame:frame];
+    [self setNeedsDisplay]; // force drawRect:
+}
 
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
@@ -80,7 +82,7 @@
     [super prepareForReuse];
     [self.imageView hnk_cancelSetImage];
     self.imageView.image = nil;
-
-
+    [[self contentView] setNeedsLayout];
+    [self setNeedsDisplay]; // force drawRect:
 }
 @end

@@ -11,4 +11,5 @@
 @interface BJServer : NSObject
 + (NSURL*) theHomePage;
 + (NSURL*) itemAtPath: (NSString*) path;
++ (NSURL*) testClientsItemAtPath: (NSString*) p;
 @end

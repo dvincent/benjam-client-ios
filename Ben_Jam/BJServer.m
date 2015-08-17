@@ -22,4 +22,9 @@ static NSString* HOST = @"benjam.herokuapp.com";
 + (NSURL*)itemAtPath: (NSString*) p {
     return [[NSURL alloc] initWithScheme: SCHEME host:HOST path: p];
 }
++ (NSURL*)testClientsItemAtPath: (NSString*) p {
+    NSString* prefix = @"/clients/ben";
+    return [[NSURL alloc] initWithScheme: SCHEME host:HOST
+                                    path: [prefix stringByAppendingString: p]  ];
+}
 @end

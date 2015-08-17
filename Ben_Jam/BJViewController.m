@@ -33,7 +33,7 @@
 }
 - (PMKPromise *)loadItems {
     // Load items from server
-    NSURL *itemURL = [BJServer theHomePage];
+    NSURL *itemURL = [BJServer testClientsItemAtPath: @""];
     BJItemClient * itemClient = [[BJItemClient alloc] initWithBaseURL:itemURL];
     
     NSString *itemPath;
@@ -49,7 +49,7 @@
 }
 - (void)play {
     NSURL *audioURL_OLD = [NSURL URLWithString:[NSString stringWithFormat:@"http://benjam.herokuapp.com/%@", self.item.audioPath]];
-    NSURL *audioURL = [BJServer itemAtPath:self.item.audioPath];
+    NSURL *audioURL = [BJServer testClientsItemAtPath:self.item.audioPath];
     assert([audioURL_OLD isEqual:audioURL]);
     //self.player = [AVPlayer playerWithURL:audioURL];
     //NSLog(@"Status %d",[self.player status]);

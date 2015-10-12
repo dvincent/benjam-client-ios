@@ -10,6 +10,7 @@
 #include "BJDetailViewController.h"
 #import "BJCell.h"
 #import "BJItemClient.h"
+#import "BJServer.h"
 #import "Haneke.h"
 #import <Overcoat/PromiseKit+Overcoat.h>
 #import <PromiseKit/PromiseKit.h>
@@ -32,7 +33,7 @@
 }
 - (PMKPromise *)loadItems {
     // Load items from server
-    NSURL *itemURL = [NSURL URLWithString:@"http://benjam.herokuapp.com"];
+    NSURL *itemURL = [BJServer testClientsItemAtPath: @""];
     BJItemClient * itemClient = [[BJItemClient alloc] initWithBaseURL:itemURL];
     
     NSString *itemPath;
@@ -47,7 +48,9 @@
     });
 }
 - (void)play {
-    NSURL *audioURL = [NSURL URLWithString:[NSString stringWithFormat:@"http://benjam.herokuapp.com/%@", self.item.audioPath]];
+    NSURL *audioURL_OLD = [NSURL URLWithString:[NSString stringWithFormat:@"http://benjam.herokuapp.com/%@", self.item.audioPath]];
+    NSURL *audioURL = [BJServer testClientsItemAtPath:self.item.audioPath];
+    assert([audioURL_OLD isEqual:audioURL]);
     //self.player = [AVPlayer playerWithURL:audioURL];
     //NSLog(@"Status %d",[self.player status]);
     //NSLog(@"Error %@",[self.player error]);

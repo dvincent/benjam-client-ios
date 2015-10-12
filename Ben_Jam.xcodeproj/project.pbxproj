@@ -241,6 +241,7 @@
 				20BD7D6B1A390DC900790055 /* Frameworks */,
 				20BD7D6C1A390DC900790055 /* Resources */,
 				2991401AB411C2839893651B /* Copy Pods Resources */,
+				FD3262D922E1C91A31951844 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -260,6 +261,7 @@
 				20BD7D8C1A390DC900790055 /* Frameworks */,
 				20BD7D8D1A390DC900790055 /* Resources */,
 				01031CDB6D84817A30B4BB78 /* Copy Pods Resources */,
+				49B9C569D3D39BCCDB5009CB /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -359,6 +361,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ben_Jam/Pods-Ben_Jam-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		49B9C569D3D39BCCDB5009CB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ben_JamTests/Pods-Ben_JamTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9427D2342B051CED41DBCE85 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -387,6 +404,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD3262D922E1C91A31951844 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ben_Jam/Pods-Ben_Jam-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

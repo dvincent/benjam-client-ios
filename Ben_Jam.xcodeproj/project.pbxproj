@@ -36,6 +36,7 @@
 		20FABD371AA5CA3E0002E4BB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FABD361AA5CA3E0002E4BB /* AVFoundation.framework */; };
 		631B7DDA1B4282D800BD8BD8 /* BJServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 631B7DD91B4282D800BD8BD8 /* BJServer.m */; };
 		631B7DDB1B4282D800BD8BD8 /* BJServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 631B7DD91B4282D800BD8BD8 /* BJServer.m */; };
+		63D6A0831BE56DCB005F4D30 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 63D6A0821BE56DCB005F4D30 /* README.md */; };
 		C5807A295954134EFFB9CAF4 /* libPods-Ben_Jam.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E318FDCEE24FE80A790DB6 /* libPods-Ben_Jam.a */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		52E318FDCEE24FE80A790DB6 /* libPods-Ben_Jam.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Ben_Jam.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		631B7DD81B4282D800BD8BD8 /* BJServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJServer.h; sourceTree = "<group>"; };
 		631B7DD91B4282D800BD8BD8 /* BJServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJServer.m; sourceTree = "<group>"; };
+		63D6A0821BE56DCB005F4D30 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6F1D7620BF6243BB45DC804D /* Pods-Ben_Jam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ben_Jam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ben_Jam/Pods-Ben_Jam.debug.xcconfig"; sourceTree = "<group>"; };
 		8A76511888D79DAB45DF89DF /* Pods-Ben_JamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ben_JamTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ben_JamTests/Pods-Ben_JamTests.release.xcconfig"; sourceTree = "<group>"; };
 		D32096E16CBCF68D550545EC /* Pods-Ben_JamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ben_JamTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ben_JamTests/Pods-Ben_JamTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		20BD7D651A390DC900790055 = {
 			isa = PBXGroup;
 			children = (
+				63D6A0821BE56DCB005F4D30 /* README.md */,
 				20AA74FE1AA404AB003E1EE4 /* Podfile.lock */,
 				20AA74FC1AA404A0003E1EE4 /* Podfile */,
 				20BD7D771A390DC900790055 /* Ben_Jam */,
@@ -433,6 +436,7 @@
 				20BD7D821A390DC900790055 /* BJAppDelegate.m in Sources */,
 				2084DF7B1A65E34E000BCB9A /* BJFixedGridLayout.m in Sources */,
 				20BD7D7E1A390DC900790055 /* main.m in Sources */,
+				63D6A0831BE56DCB005F4D30 /* README.md in Sources */,
 				20BD7DA81A39161400790055 /* BJCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

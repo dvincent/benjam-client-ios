@@ -27,7 +27,7 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self != nil) {
-
+        
     }
     return self;
 }
@@ -45,6 +45,8 @@
     }
     return [itemClient GET:itemPath parameters:nil].then(^(OVCResponse *response) {
         return response.result;
+    }).catch (^(NSError *error) {
+        return nil;
     });
 }
 - (void)play {
@@ -60,7 +62,7 @@
     
     NSError *error;
     self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:audioURL
-                                                        error:&error];
+                                                              error:&error];
     self.audioPlayer.numberOfLoops = 1;
     [self.audioPlayer prepareToPlay];
     [self.audioPlayer play];
@@ -74,14 +76,14 @@
     [super viewDidLoad];
     
     [self.collectionView registerClass:[BJCell class] forCellWithReuseIdentifier:@"Cell"];
-
+    
     PMKPromise *loadItemsPromise =     [self loadItems];
     loadItemsPromise.finally(^(void){
         self.items = loadItemsPromise.value;
         [[self collectionView] reloadData];
     });
     
-	// Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning
@@ -114,12 +116,12 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     BJCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
-
+    
     BJItem *item = (BJItem *)self.items[indexPath.row];
-   
+    
     // load the image for this cell
     [cell.imageView hnk_setImageFromURL:[NSURL URLWithString:[@"http://benjam.herokuapp.com/" stringByAppendingString:item.imagePath]]];
-
+    
     cell.label.text = [NSString stringWithFormat:@" %@", item.name];
     return cell;
 }
@@ -130,29 +132,30 @@
     
     PMKPromise *loadItemsPromise = [self loadItems];
     loadItemsPromise.finally(^(void) {
-        self.items = loadItemsPromise.value;
-        if (self.items.count > 0) {
-            [[self collectionView] reloadData];
-        }
-        else {
-            BJCell *cell = (BJCell *)[collectionView cellForItemAtIndexPath:indexPath];
-            if (cell.imageView.image != nil)
-            {
-                // we need to load the main storyboard because this view controller was created programmatically
-                UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-            
-                BJDetailViewController *detailViewController = [storyboard instantiateViewControllerWithIdentifier:@"detailVC"];
-                // FIXME get image from item url
-                detailViewController.image = cell.imageView.image;
-                detailViewController.labelText = cell.label.text;
-
-                 self.item = nil;
-                self.items = nil;
-            
-                // FIXME audio
-                [self.navigationController pushViewController:detailViewController animated:YES];
+        if (! [loadItemsPromise.value isKindOfClass:[NSError class]]) {
+            self.items = loadItemsPromise.value;
+            if (self.items.count > 0) {
+                [[self collectionView] reloadData];
             }
-    }});
+            else {
+                BJCell *cell = (BJCell *)[collectionView cellForItemAtIndexPath:indexPath];
+                if (cell.imageView.image != nil)
+                {
+                    // we need to load the main storyboard because this view controller was created programmatically
+                    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                    
+                    BJDetailViewController *detailViewController = [storyboard instantiateViewControllerWithIdentifier:@"detailVC"];
+                    // FIXME get image from item url
+                    detailViewController.image = cell.imageView.image;
+                    detailViewController.labelText = cell.label.text;
+                    
+                    self.item = nil;
+                    self.items = nil;
+                    
+                    // FIXME audio
+                    [self.navigationController pushViewController:detailViewController animated:YES];
+                }
+            }}});
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {

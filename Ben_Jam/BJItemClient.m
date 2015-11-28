@@ -15,7 +15,7 @@
     return @{
              @"items/*": [BJItem class],
              @"items.json": [BJItem class],
-             @"items/*/items.json": [BJItem class],
+             @"items/*/index.json": [BJItem class],
              };
 }
 

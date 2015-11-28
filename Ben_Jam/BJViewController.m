@@ -14,7 +14,7 @@
 #import "Haneke.h"
 #import <Overcoat/PromiseKit+Overcoat.h>
 #import <PromiseKit/PromiseKit.h>
-#import <Mantle/EXTScope.h>
+//#import <Mantle/EXTScope.h>
 
 
 @interface BJViewController ()
@@ -41,7 +41,7 @@
         itemPath = @"items.json";
     }
     else {
-        itemPath = [NSString stringWithFormat:@"items/%@/items.json", self.item.id];
+        itemPath = [NSString stringWithFormat:@"items/%@/index.json", self.item.id];
     }
     return [itemClient GET:itemPath parameters:nil].then(^(OVCResponse *response) {
         return response.result;

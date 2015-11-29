@@ -36,7 +36,7 @@
 - (void)prepareLayout
 {
     
-    CGSize size = self.collectionView.bounds.size;
+    const CGSize size = self.collectionView.bounds.size;
     
     NSLog(@"Collection View %@", self.collectionView);
     // we only display one section in this layout
@@ -67,6 +67,9 @@
     // Caclute grid size
     CGFloat gridWidth = size.width / widthCount;
     CGFloat gridHeight = size.height / heightCount ;
+    
+    // Having decided on grid size, ensure item size will never be too big.
+    itemWidth = MIN(itemWidth, MIN(gridWidth, gridHeight));
     
     self.itemSize = CGSizeMake(itemWidth, itemWidth);
     

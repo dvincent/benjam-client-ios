@@ -13,6 +13,8 @@
 
 - (id)initWithFrame:(CGRect)frame
 {
+    const bool log_this_routine = YES;
+    if (log_this_routine) { NSLog(@"BJCell class initWithFrame routine: starting."); }
     self = [super initWithFrame:frame];
     if (self)
     {
@@ -37,13 +39,12 @@
         kCALayerLeftEdge | kCALayerRightEdge | kCALayerBottomEdge | kCALayerTopEdge;
         [[self contentView] addSubview:self.imageView];
         
-        CGRect textBounds = CGRectMake(self.bounds.origin.x,
-                                       self.bounds.origin.y + (self.bounds.size.height - 17.0),
-                                       self.bounds.size.width,
-                                       17.0);
-        
+        const CGRect textBounds = CGRectMake(self.bounds.origin.x,
+                                             self.bounds.origin.y + (self.bounds.size.height - 17.0),
+                                             self.bounds.size.width,
+                                             17.0);
         _label = [[UILabel alloc] initWithFrame:textBounds];
-     
+        if (log_this_routine) { NSLog(@"BJCell class initWithFrame routine: _label: %@.", _label.description); }
         
         self.label.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         self.label.contentMode = UIViewContentModeScaleAspectFill;
@@ -53,7 +54,8 @@
         
     }
 
-
+    if (log_this_routine) { NSLog(@"BJCell class initWithFrame routine: finishing."); }
+    if (log_this_routine) { NSLog(@"BJCell class initWithFrame routine. ----------"); }
     return self;
 }
 

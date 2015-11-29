@@ -14,6 +14,5 @@
 @interface BJViewController : UICollectionViewController<UICollectionViewDataSource>
 @property (nonatomic,strong)BJItem *item;
 @property (nonatomic,strong)NSArray *items;
-@property (nonatomic,strong)AVPlayer *player;
-@property (nonatomic,strong)AVAudioPlayer *audioPlayer;
+@property (nonatomic,strong)AVQueuePlayer *player;
 @end

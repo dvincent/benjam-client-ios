@@ -35,10 +35,10 @@
 
 - (void)prepareLayout
 {
-    
+    const bool log_this_method = YES;
     const CGSize size = self.collectionView.bounds.size;
     
-    NSLog(@"Collection View %@", self.collectionView);
+    if (log_this_method) { NSLog(@"Collection View %@", self.collectionView); }
     // we only display one section in this layout
     NSInteger itemCount = [self.collectionView numberOfItemsInSection:0];
 
@@ -78,8 +78,10 @@
     {
         _attributesArray = [[NSMutableArray alloc] initWithCapacity:itemCount];
     }
-    NSLog(@"itemSize %f %f Grid %f %f\n", self.itemSize.width, self.itemSize.height,
-          gridWidth, gridHeight);
+    if (log_this_method) {
+        NSLog(@"itemSize %f %f Grid %f %f\n", self.itemSize.width, self.itemSize.height,
+              gridWidth, gridHeight);
+    }
     // generate the new attributes array for each photo in the stack
     for (NSInteger i = 0; i < itemCount; i++)
     {
@@ -91,9 +93,12 @@
         attributes.center = CGPointMake(x, y);;
         attributes.alpha = 1.0;
         attributes.zIndex = 0;
-        NSLog(@"Layout attributes %ld\n%@\n", (long)i, attributes.description);
-        NSLog(@"Size %f %f Centre %f %f\n", attributes.size.width, attributes.size.height,
+        if (log_this_method) {
+            NSLog(@"itemSize %f %f Grid %f %f\n", self.itemSize.width, self.itemSize.height,
+                  gridWidth, gridHeight);
+            NSLog(@"Size %f %f Centre %f %f\n", attributes.size.width, attributes.size.height,
               attributes.center.x, attributes.center.y);
+        }
         [self.attributesArray addObject:attributes];
     }
 }

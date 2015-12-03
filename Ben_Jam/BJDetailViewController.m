@@ -30,6 +30,7 @@
 
 - (void)viewDidLoad
 {
+    NSLog(@"viewDidLoad %@", self);
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
@@ -48,7 +49,7 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    NSLog(@"Segue");
+    NSLog(@"Segue %@", sender);
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -60,11 +61,13 @@
 
 - (IBAction)correct:(id)sender
 {
- [self.navigationController popViewControllerAnimated: YES];
+    NSLog(@"Correct");
+    [self.navigationController popToRootViewControllerAnimated: YES];
     
 }
 - (IBAction)incorrect:(id)sender
 {
+    NSLog(@"Incorrect");
     [self.navigationController popViewControllerAnimated: YES];
 }
 
